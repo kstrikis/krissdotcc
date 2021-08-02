@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>kriss.cc</title>
+	</head>
+	<body>
+		<h1>Welcome to kriss.cc.</h1>
+	</body>
+	<main>
+		<p>This page is hosted on S3 and is being served by CloudFront. The benefits of using CloudFront for a static website, besides performance, are the ability to use an SSL certificate and the ability to point to any bucket (typical S3 static site hosting requires the bucket name to match the domain name).</p>
+		<p>The following is work in progress:</p>
+		<p>I edit this page using some text editor, then push it to GitHub. From there, TravisCI detects the push, runs a test on it, and if passed will update the bucket with the changes. The only test so far is to pattern match a forbidden magic word. If it detects this magic word in a new change, TravisCI sends a notification to a Slack channel.</p>
+		<p>When the page is successfully changed, the S3 bucket updates, sending an SNS notification to trigger an AWS Lambda script. This script, written in Python, creates a new record in an Amazon RDS database for each S3 bucket update.</p>
+		<p>I roll up the cumulated records on that database to a second database every so often. This I manage with Jenkins and Liquibase running on an EC2 instance.</p>
+		<p>The github repo is here: <a href="https://github.com/kstrikis/krissdotcc" target="_blank">https://github.com/kstrikis/krissdotcc</a></p>
+		<p>The CloudFront distribution is: <a href="http://d3omunlg8jqvfw.cloudfront.net" target="_blank">d3omunlg8jqvfw.cloudfront.net</a></p>
+		<p>The S3 bucket is accessible here: http://krissdotcc.s3-website-us-east-1.amazonaws.com</p>
+		<p>Last modified 2021-08-02 18:24</p>
+	</main>
+</html>
