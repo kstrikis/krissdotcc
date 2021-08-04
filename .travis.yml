@@ -3,9 +3,8 @@ node_js:
 - node
 deploy:
   provider: s3
-  access_key_id: AKIA2AC63A4OBQT4NHN4
-  secret_access_key:
-    secure: Jkg8BY1jgFMbXbL1cjKiUWafpEDxAwJ3wTCchR9om4i3MxMwdNk/taS5mAB0+41HT9qN1m/021ZImOsyn7SJSpPHjcK1EXcD44/Bfb2OzEiZuj0zlI7FqggwsPcd+LyebhICpS/NOZ/pnvQfepmb1ifRpkxMLJfUNL2qQGbufSoRWLEZWQvLrMQ6fIyS8ADuHISsBRfr+VELNNNktjztTOxZLUqS7QYb2UBECu8z7uOE6NB2dsS3Nsr3bkSHnDmIFXaT/ibhaKErrXN4446Z9d6si4VxW8RP1eqFJBrXPi3qTDXmAJIi/NBm30q6WE63nJYCKNP8nP4Qkh/4aiuU9G8KHUsw9h7injEAHNDDvru8Re15ccnCorVyIPlz95cIajrLCMqGN0TOy46LwiTqhp5tJIfJJSc5CGgwDskiMXsAowkKX/ivRZ0p7/45nBeZ9YaVsDBKBNzDP4NOSVtEx9vqtSsgQnOYNGjT4hHTCJGywAg1HE76Xlzx4QatxgWBKnUAkw9r/83Gl0QfoLPHo06TRTIS4ZlmVjiRdLmQfLOSrn6Ar1nY+gkkZVWLb1E9gciw3DYgsQ9MdqBZxeeW0yqoEDryML9tkmmgYxR5GsP0xPhXli0ZN0LIcPGp6t8+QOOj8Wrghc/jpPJ2eMTHvvWstANwocWfom4n0/cykwA=
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
   bucket: krissdotcc
   acl: public_read
   on:
