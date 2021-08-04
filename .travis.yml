@@ -11,4 +11,3 @@ deploy:
   bucket: krissdotcc
   acl: public_read
   skip_cleanup: true
-  local_dir: build
