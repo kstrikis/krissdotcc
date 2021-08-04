@@ -1,0 +1,19 @@
+{
+  "name": "krissdotcc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kstrikis/krissdotcc.git"
+  },
+  "author": "kstrikis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kstrikis/krissdotcc/issues"
+  },
+  "homepage": "https://github.com/kstrikis/krissdotcc#readme"
+}
