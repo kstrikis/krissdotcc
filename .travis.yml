@@ -1,12 +1,14 @@
 language: node_js
 node_js:
-  - node
+- node
 deploy:
   provider: s3
-  on:
-    branch: main
   access_key_id: AKIA2AC63A4OIWJZJEOJ
-  secret_access_key: TvyOtCiiWsJ2MnsbRElDweGhnKkJrW3W4gkpvNobbaem5QtS9zEPBVdB7zTSoWgoZmL+BTGP/PQGygRotdwetKh9asr/4GRxYe6uio2DwxF7n/jCRGPSGtJUB7VVMzkMoysUWW8gCCt8nSpYgALJ+TcRzof6Y8UeX/GdNeReiN96DIcgqId2y2kHf3dQBHTCnEjKLbRvSVSm/vmvmko453h1/uWtRFVF5psEozltQjJLPH6CvFDnqNkLJsfoGR1ZM6HV9Y8iZHGvrQepU8x0Br4Q+uCl6jIWYhGT4m+uRLEwFLOma/RExgo1PDbxfH5sxXWMatac/ybO1M3+VssAwO1n8OgODbVIoH00CRoI46K5Fk7oci6SZiY5wmSo3zzLHujEVVvT8JbsjngqYKO3Pu2u/hBMaNSE4B5zjytTTEWuULQ1GnmUu/QBEkC5/fgqJYQQhJyT1Jz3Ep98obVgJawr0A0SKnyvy1Ov4wlcF9MlIOf8iQgM9U8VcmNB/iD17Jvw0Lwz4WLKmoBZYtyMnprVNbSariyV7NePgdytLLzT2C0zf8w973aVD7cV0hr63mnoSDvQMLykkIwCLbXOsYSuviQqHaXduYWKmjI0GP3M2B0lXJIPTm1y0t6GyQn6KnaHbCdd3KLAYiA5IeGA7wZvb/nrlKZBSARIYnYiI54=
+  secret_access_key:
+    secure: FtoqEv8D5jzm8bAW//7UeVMoexttj9X9ZxkIISBn5F+DyTLwMj+vrJBasjdKWO3ppoEG07rogleF3qY+NqbYE/TtkHwP3qISgC2WXXi/+8F6lXT6AMIccMHOqjNT30Ggm7CLdFEY+yZ5CMzADJuxk11S2AkqUrWiCc0viVBYg31j5fmtcKLsXxaexhFfiRm9CCsoWLuUcbxldrzQSDJP3lSoke1CinrypXOwOVVdwr6nxXmZOnFLqP4s9ZyK8yHpl2E9i2EulBnDf4ETXK3w3q693WK955PZo2lJmAJehXmKVcMjHloHpRtUqaKHL0fgbLCACeCugmI40sfrIPiv5GSkuL8OB/yq1UcGuDAh+8OQfL+dlnME1T0/JHA3DwTJt64Ohm/19Z0cl6dYmVe4gUTT/eiAB/hm38NgMKOXJgpjkcD8KbTJa5R0zhtESyst71U04GsUKpXrrUpNysOBS+XAMhjSVAx1/LHIh9hLJl/bcYd7MwvndtVLLXTlGyQkFt6ZpBqNYvh2gbuTR+uPYQyS0hhe+puJ/szMq/0R5v/qPrLyQIEtExphVIwbyZMaifyLcMKM/0+LJ59DfLRDDbIRcCITIlo0/MxpBAKG/6PfOvtxfUCdRnH2JEYwX4Y/SEG6y6t7ZcYepn5RFxzrBwsz/JjbSqIgh/F9QR3X69w=
   bucket: krissdotcc
   acl: public_read
-  skip_cleanup: true
+  on:
+    repo: kstrikis/krissdotcc
+    branch: main
+  skip_cleanup: 'true'
