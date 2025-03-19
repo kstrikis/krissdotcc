@@ -1,0 +1,65 @@
+{
+    "IndexDocument": {
+        "Suffix": "index.html"
+    },
+    "ErrorDocument": {
+        "Key": "404.html"
+    },
+    "RoutingRules": [
+        {
+            "Condition": {
+                "KeyPrefixEquals": "redirect/chatgenius"
+            },
+            "Redirect": {
+                "Protocol": "https",
+                "HostName": "www.youtube.com",
+                "ReplaceKeyWith": "watch?v=kCa8fSvzm58",
+                "HttpRedirectCode": "302"
+            }
+        },
+        {
+            "Condition": {
+                "KeyPrefixEquals": "redirect/mcpmonkey"
+            },
+            "Redirect": {
+                "Protocol": "https",
+                "HostName": "www.youtube.com",
+                "ReplaceKeyWith": "watch?v=wZ03oQR-LZs",
+                "HttpRedirectCode": "302"
+            }
+        },
+        {
+            "Condition": {
+                "KeyPrefixEquals": "redirect/reelai"
+            },
+            "Redirect": {
+                "Protocol": "https",
+                "HostName": "www.youtube.com",
+                "ReplaceKeyWith": "watch?v=kK4hH_fZhzg",
+                "HttpRedirectCode": "302"
+            }
+        },
+        {
+            "Condition": {
+                "KeyPrefixEquals": "redirect/autocrm"
+            },
+            "Redirect": {
+                "Protocol": "https",
+                "HostName": "www.youtube.com",
+                "ReplaceKeyWith": "watch?v=UyYaHlZ_GmE",
+                "HttpRedirectCode": "302"
+            }
+        },
+        {
+            "Condition": {
+                "KeyPrefixEquals": "redirect/sana-mobile"
+            },
+            "Redirect": {
+                "Protocol": "https",
+                "HostName": "www.youtube.com",
+                "ReplaceKeyWith": "watch?v=",
+                "HttpRedirectCode": "302"
+            }
+        }
+    ]
+} 

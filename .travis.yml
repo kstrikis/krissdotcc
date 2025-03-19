@@ -3,7 +3,7 @@ before_install:
   - sudo apt-get update
 language: node_js
 node_js:
-- 17
+- 22
 deploy:
   provider: s3
   access_key_id: $ACCESS_KEY_ID
